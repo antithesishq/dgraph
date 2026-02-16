@@ -10,7 +10,7 @@ pull-dgraph:
 
 build-workload:
 	${docker} build --no-cache \
-		-f ./Dockerfile \
+		-f ./workload.Dockerfile \
 		-t dgraph-workload-test:latest \
 	.
 

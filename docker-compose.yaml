@@ -123,7 +123,7 @@ services:
 
   workload:
     container_name: workload
-    image: dgraph-workload-test:latest
+    image: us-central1-docker.pkg.dev/molten-verve-216720/demo-repository/dgraph-workload-test:latest
     hostname: workload
     environment:
       ANTITHESIS_SDK_LOCAL_OUTPUT: /root/sdk.json

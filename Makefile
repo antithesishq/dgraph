@@ -12,6 +12,7 @@ build-workload:
 	${docker} build --no-cache \
 		-f ./workload.Dockerfile \
 		-t dgraph-workload-test:latest \
+		-t us-central1-docker.pkg.dev/molten-verve-216720/demo-repository/dgraph-workload-test:latest
 	.
 
 test-first-make-ring:

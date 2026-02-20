@@ -4,6 +4,15 @@ on:
   schedule:
     - cron: "00 22 * * *"
   workflow_dispatch:
+    inputs:
+      duration:
+        type: string
+        required: false # default set below b/c automated runs don't use this config
+        description: Test duration (minutes, default 15)
+      emails:
+        type: string
+        required: false # likewise, default set below
+        description: Email recipients (default notifies Zulip)
 
 jobs:
   Antithesis:
